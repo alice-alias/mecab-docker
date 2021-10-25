@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  mecab:
+    build:
+      context: .
+    command: ["mecab", "/root/input.txt"]
+    volumes:
+      - ./input.txt:/root/input.txt:ro
